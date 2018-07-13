@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - mysql@localhost" uuid="ce7f8d05-a2de-4164-9c84-2303343119a1">
+    <database-info product="MySQL" version="5.5.40" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="mysql"/>
+      <table id="2" parent="1" name="columns_priv">
+        <comment>Column privileges</comment>
+      </table>
+      <table id="3" parent="1" name="db">
+        <comment>Database privileges</comment>
+      </table>
+      <table id="4" parent="1" name="event">
+        <comment>Events</comment>
+      </table>
+      <table id="5" parent="1" name="func">
+        <comment>User defined functions</comment>
+      </table>
+      <table id="6" parent="1" name="general_log">
+        <comment>General log</comment>
+      </table>
+      <table id="7" parent="1" name="help_category">
+        <comment>help categories</comment>
+      </table>
+      <table id="8" parent="1" name="help_keyword">
+        <comment>help keywords</comment>
+      </table>
+      <table id="9" parent="1" name="help_relation">
+        <comment>keyword-topic relation</comment>
+      </table>
+      <table id="10" parent="1" name="help_topic">
+        <comment>help topics</comment>
+      </table>
+      <table id="11" parent="1" name="host">
+        <comment>Host privileges;  Merged with database privileges</comment>
+      </table>
+      <table id="12" parent="1" name="ndb_binlog_index"/>
+      <table id="13" parent="1" name="plugin">
+        <comment>MySQL plugins</comment>
+      </table>
+      <table id="14" parent="1" name="proc">
+        <comment>Stored Procedures</comment>
+      </table>
+      <table id="15" parent="1" name="procs_priv">
+        <comment>Procedure privileges</comment>
+      </table>
+      <table id="16" parent="1" name="proxies_priv">
+        <comment>User proxy privileges</comment>
+      </table>
+      <table id="17" parent="1" name="servers">
+        <comment>MySQL Foreign Servers table</comment>
+      </table>
+      <table id="18" parent="1" name="slow_log">
+        <comment>Slow log</comment>
+      </table>
+      <table id="19" parent="1" name="tables_priv">
+        <comment>Table privileges</comment>
+      </table>
+      <table id="20" parent="1" name="time_zone">
+        <comment>Time zones</comment>
+      </table>
+      <table id="21" parent="1" name="time_zone_leap_second">
+        <comment>Leap seconds information for time zones</comment>
+      </table>
+      <table id="22" parent="1" name="time_zone_name">
+        <comment>Time zone names</comment>
+      </table>
+      <table id="23" parent="1" name="time_zone_transition">
+        <comment>Time zone transitions</comment>
+      </table>
+      <table id="24" parent="1" name="time_zone_transition_type">
+        <comment>Time zone transition types</comment>
+      </table>
+      <table id="25" parent="1" name="user">
+        <comment>Users and global privileges</comment>
+      </table>
+      <column id="26" parent="2" name="Host">
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="27" parent="2" name="Db">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="28" parent="2" name="User">
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="29" parent="2" name="Table_name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="30" parent="2" name="Column_name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="31" parent="2" name="Timestamp">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="32" parent="2" name="Column_priv">
+        <mandatory>1</mandatory>
+        <data-type>set(&apos;Select&apos;, &apos;Insert&apos;, &apos;Update&apos;, &apos;References&apos;)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="33" parent="2" name="PRIMARY">
+        <columns>Host
+Db
+User
+Table_name
+Column_name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="34" parent="3" name="Host">
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="35" parent="3" name="Db">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="36" parent="3" name="User">
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="37" parent="3" name="Select_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="38" parent="3" name="Insert_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="39" parent="3" name="Update_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="40" parent="3" name="Delete_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="41" parent="3" name="Create_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="42" parent="3" name="Drop_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="43" parent="3" name="Grant_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="44" parent="3" name="References_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="45" parent="3" name="Index_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="46" parent="3" name="Alter_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="47" parent="3" name="Create_tmp_table_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="48" parent="3" name="Lock_tables_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="49" parent="3" name="Create_view_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="50" parent="3" name="Show_view_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="51" parent="3" name="Create_routine_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="52" parent="3" name="Alter_routine_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="53" parent="3" name="Execute_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="54" parent="3" name="Event_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="55" parent="3" name="Trigger_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <index id="56" parent="3" name="User">
+        <columns>User</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="57" parent="3" name="PRIMARY">
+        <columns>Host
+Db
+User</columns>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="4" name="db">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="59" parent="4" name="name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="60" parent="4" name="body">
+        <mandatory>1</mandatory>
+        <data-type>longblob</data-type>
+      </column>
+      <column id="61" parent="4" name="definer">
+        <mandatory>1</mandatory>
+        <data-type>char(77)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="62" parent="4" name="execute_at">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="63" parent="4" name="interval_value">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="64" parent="4" name="interval_field">
+        <data-type>enum(&apos;YEAR&apos;, &apos;QUARTER&apos;, &apos;MONTH&apos;, &apos;DAY&apos;, &apos;HOUR&apos;, &apos;MINUTE&apos;, &apos;WEEK&apos;, &apos;SECOND&apos;, &apos;MICROSECOND&apos;, &apos;YEAR_MONTH&apos;, &apos;DAY_HOUR&apos;, &apos;DAY_MINUTE&apos;, &apos;DAY_SECOND&apos;, &apos;HOUR_MINUTE&apos;, &apos;HOUR_SECOND&apos;, &apos;MINUTE_SECOND&apos;, &apos;DAY_MICROSECOND&apos;, &apos;HOUR_MICROSECOND&apos;, &apos;MINUTE_MICROSECOND&apos;, &apos;SECOND_MICROSECOND&apos;)</data-type>
+      </column>
+      <column id="65" parent="4" name="created">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="66" parent="4" name="modified">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="67" parent="4" name="last_executed">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="68" parent="4" name="starts">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="69" parent="4" name="ends">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="70" parent="4" name="status">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;ENABLED&apos;, &apos;DISABLED&apos;, &apos;SLAVESIDE_DISABLED&apos;)</data-type>
+        <default-expression>&apos;ENABLED&apos;</default-expression>
+      </column>
+      <column id="71" parent="4" name="on_completion">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;DROP&apos;, &apos;PRESERVE&apos;)</data-type>
+        <default-expression>&apos;DROP&apos;</default-expression>
+      </column>
+      <column id="72" parent="4" name="sql_mode">
+        <mandatory>1</mandatory>
+        <data-type>set(&apos;REAL_AS_FLOAT&apos;, &apos;PIPES_AS_CONCAT&apos;, &apos;ANSI_QUOTES&apos;, &apos;IGNORE_SPACE&apos;, &apos;NOT_USED&apos;, &apos;ONLY_FULL_GROUP_BY&apos;, &apos;NO_UNSIGNED_SUBTRACTION&apos;, &apos;NO_DIR_IN_CREATE&apos;, &apos;POSTGRESQL&apos;, &apos;ORACLE&apos;, &apos;MSSQL&apos;, &apos;DB2&apos;, &apos;MAXDB&apos;, &apos;NO_KEY_OPTIONS&apos;, &apos;NO_TABLE_OPTIONS&apos;, &apos;NO_FIELD_OPTIONS&apos;, &apos;MYSQL323&apos;, &apos;MYSQL40&apos;, &apos;ANSI&apos;, &apos;NO_AUTO_VALUE_ON_ZERO&apos;, &apos;NO_BACKSLASH_ESCAPES&apos;, &apos;STRICT_TRANS_TABLES&apos;, &apos;STRICT_ALL_TABLES&apos;, &apos;NO_ZERO_IN_DATE&apos;, &apos;NO_ZERO_DATE&apos;, &apos;INVALID_DATES&apos;, &apos;ERROR_FOR_DIVISION_BY_ZERO&apos;, &apos;TRADITIONAL&apos;, &apos;NO_AUTO_CREATE_USER&apos;, &apos;HIGH_NOT_PRECEDENCE&apos;, &apos;NO_ENGINE_SUBSTITUTION&apos;, &apos;PAD_CHAR_TO_FULL_LENGTH&apos;)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="73" parent="4" name="comment">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="74" parent="4" name="originator">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="75" parent="4" name="time_zone">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;SYSTEM&apos;</default-expression>
+      </column>
+      <column id="76" parent="4" name="character_set_client">
+        <data-type>char(32)</data-type>
+      </column>
+      <column id="77" parent="4" name="collation_connection">
+        <data-type>char(32)</data-type>
+      </column>
+      <column id="78" parent="4" name="db_collation">
+        <data-type>char(32)</data-type>
+      </column>
+      <column id="79" parent="4" name="body_utf8">
+        <data-type>longblob</data-type>
+      </column>
+      <key id="80" parent="4" name="PRIMARY">
+        <columns>db
+name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="81" parent="5" name="name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="82" parent="5" name="ret">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="83" parent="5" name="dl">
+        <mandatory>1</mandatory>
+        <data-type>char(128)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="84" parent="5" name="type">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;function&apos;, &apos;aggregate&apos;)</data-type>
+      </column>
+      <key id="85" parent="5" name="PRIMARY">
+        <columns>name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="86" parent="6" name="event_time">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="87" parent="6" name="user_host">
+        <mandatory>1</mandatory>
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="88" parent="6" name="thread_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="89" parent="6" name="server_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="90" parent="6" name="command_type">
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="91" parent="6" name="argument">
+        <mandatory>1</mandatory>
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="92" parent="7" name="help_category_id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(5) unsigned</data-type>
+      </column>
+      <column id="93" parent="7" name="name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+      </column>
+      <column id="94" parent="7" name="parent_category_id">
+        <data-type>smallint(5) unsigned</data-type>
+      </column>
+      <column id="95" parent="7" name="url">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <index id="96" parent="7" name="name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="97" parent="7" name="name">
+        <columns>name</columns>
+        <underlying-index>name</underlying-index>
+      </key>
+      <key id="98" parent="7" name="PRIMARY">
+        <columns>help_category_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="99" parent="8" name="help_keyword_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="100" parent="8" name="name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+      </column>
+      <index id="101" parent="8" name="name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="102" parent="8" name="name">
+        <columns>name</columns>
+        <underlying-index>name</underlying-index>
+      </key>
+      <key id="103" parent="8" name="PRIMARY">
+        <columns>help_keyword_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="104" parent="9" name="help_topic_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="105" parent="9" name="help_keyword_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <key id="106" parent="9" name="PRIMARY">
+        <columns>help_keyword_id
+help_topic_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="107" parent="10" name="help_topic_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="108" parent="10" name="name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+      </column>
+      <column id="109" parent="10" name="help_category_id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(5) unsigned</data-type>
+      </column>
+      <column id="110" parent="10" name="description">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="111" parent="10" name="example">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="112" parent="10" name="url">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <index id="113" parent="10" name="name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="114" parent="10" name="name">
+        <columns>name</columns>
+        <underlying-index>name</underlying-index>
+      </key>
+      <key id="115" parent="10" name="PRIMARY">
+        <columns>help_topic_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="116" parent="11" name="Host">
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="117" parent="11" name="Db">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="118" parent="11" name="Select_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="119" parent="11" name="Insert_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="120" parent="11" name="Update_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="121" parent="11" name="Delete_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="122" parent="11" name="Create_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="123" parent="11" name="Drop_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="124" parent="11" name="Grant_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="125" parent="11" name="References_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="126" parent="11" name="Index_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="127" parent="11" name="Alter_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="128" parent="11" name="Create_tmp_table_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="129" parent="11" name="Lock_tables_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="130" parent="11" name="Create_view_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="131" parent="11" name="Show_view_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="132" parent="11" name="Create_routine_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="133" parent="11" name="Alter_routine_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="134" parent="11" name="Execute_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="135" parent="11" name="Trigger_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <key id="136" parent="11" name="PRIMARY">
+        <columns>Host
+Db</columns>
+        <primary>1</primary>
+      </key>
+      <column id="137" parent="12" name="Position">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+      </column>
+      <column id="138" parent="12" name="File">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="139" parent="12" name="epoch">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+      </column>
+      <column id="140" parent="12" name="inserts">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+      </column>
+      <column id="141" parent="12" name="updates">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+      </column>
+      <column id="142" parent="12" name="deletes">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+      </column>
+      <column id="143" parent="12" name="schemaops">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+      </column>
+      <key id="144" parent="12" name="PRIMARY">
+        <columns>epoch</columns>
+        <primary>1</primary>
+      </key>
+      <column id="145" parent="13" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="146" parent="13" name="dl">
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="147" parent="13" name="PRIMARY">
+        <columns>name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="148" parent="14" name="db">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="149" parent="14" name="name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="150" parent="14" name="type">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;FUNCTION&apos;, &apos;PROCEDURE&apos;)</data-type>
+      </column>
+      <column id="151" parent="14" name="specific_name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="152" parent="14" name="language">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;SQL&apos;)</data-type>
+        <default-expression>&apos;SQL&apos;</default-expression>
+      </column>
+      <column id="153" parent="14" name="sql_data_access">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;CONTAINS_SQL&apos;, &apos;NO_SQL&apos;, &apos;READS_SQL_DATA&apos;, &apos;MODIFIES_SQL_DATA&apos;)</data-type>
+        <default-expression>&apos;CONTAINS_SQL&apos;</default-expression>
+      </column>
+      <column id="154" parent="14" name="is_deterministic">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;YES&apos;, &apos;NO&apos;)</data-type>
+        <default-expression>&apos;NO&apos;</default-expression>
+      </column>
+      <column id="155" parent="14" name="security_type">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;INVOKER&apos;, &apos;DEFINER&apos;)</data-type>
+        <default-expression>&apos;DEFINER&apos;</default-expression>
+      </column>
+      <column id="156" parent="14" name="param_list">
+        <mandatory>1</mandatory>
+        <data-type>blob</data-type>
+      </column>
+      <column id="157" parent="14" name="returns">
+        <mandatory>1</mandatory>
+        <data-type>longblob</data-type>
+      </column>
+      <column id="158" parent="14" name="body">
+        <mandatory>1</mandatory>
+        <data-type>longblob</data-type>
+      </column>
+      <column id="159" parent="14" name="definer">
+        <mandatory>1</mandatory>
+        <data-type>char(77)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="160" parent="14" name="created">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="161" parent="14" name="modified">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="162" parent="14" name="sql_mode">
+        <mandatory>1</mandatory>
+        <data-type>set(&apos;REAL_AS_FLOAT&apos;, &apos;PIPES_AS_CONCAT&apos;, &apos;ANSI_QUOTES&apos;, &apos;IGNORE_SPACE&apos;, &apos;NOT_USED&apos;, &apos;ONLY_FULL_GROUP_BY&apos;, &apos;NO_UNSIGNED_SUBTRACTION&apos;, &apos;NO_DIR_IN_CREATE&apos;, &apos;POSTGRESQL&apos;, &apos;ORACLE&apos;, &apos;MSSQL&apos;, &apos;DB2&apos;, &apos;MAXDB&apos;, &apos;NO_KEY_OPTIONS&apos;, &apos;NO_TABLE_OPTIONS&apos;, &apos;NO_FIELD_OPTIONS&apos;, &apos;MYSQL323&apos;, &apos;MYSQL40&apos;, &apos;ANSI&apos;, &apos;NO_AUTO_VALUE_ON_ZERO&apos;, &apos;NO_BACKSLASH_ESCAPES&apos;, &apos;STRICT_TRANS_TABLES&apos;, &apos;STRICT_ALL_TABLES&apos;, &apos;NO_ZERO_IN_DATE&apos;, &apos;NO_ZERO_DATE&apos;, &apos;INVALID_DATES&apos;, &apos;ERROR_FOR_DIVISION_BY_ZERO&apos;, &apos;TRADITIONAL&apos;, &apos;NO_AUTO_CREATE_USER&apos;, &apos;HIGH_NOT_PRECEDENCE&apos;, &apos;NO_ENGINE_SUBSTITUTION&apos;, &apos;PAD_CHAR_TO_FULL_LENGTH&apos;)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="163" parent="14" name="comment">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="164" parent="14" name="character_set_client">
+        <data-type>char(32)</data-type>
+      </column>
+      <column id="165" parent="14" name="collation_connection">
+        <data-type>char(32)</data-type>
+      </column>
+      <column id="166" parent="14" name="db_collation">
+        <data-type>char(32)</data-type>
+      </column>
+      <column id="167" parent="14" name="body_utf8">
+        <data-type>longblob</data-type>
+      </column>
+      <key id="168" parent="14" name="PRIMARY">
+        <columns>db
+name
+type</columns>
+        <primary>1</primary>
+      </key>
+      <column id="169" parent="15" name="Host">
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="170" parent="15" name="Db">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="171" parent="15" name="User">
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="172" parent="15" name="Routine_name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="173" parent="15" name="Routine_type">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;FUNCTION&apos;, &apos;PROCEDURE&apos;)</data-type>
+      </column>
+      <column id="174" parent="15" name="Grantor">
+        <mandatory>1</mandatory>
+        <data-type>char(77)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="175" parent="15" name="Proc_priv">
+        <mandatory>1</mandatory>
+        <data-type>set(&apos;Execute&apos;, &apos;Alter Routine&apos;, &apos;Grant&apos;)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="176" parent="15" name="Timestamp">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="177" parent="15" name="Grantor">
+        <columns>Grantor</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="178" parent="15" name="PRIMARY">
+        <columns>Host
+Db
+User
+Routine_name
+Routine_type</columns>
+        <primary>1</primary>
+      </key>
+      <column id="179" parent="16" name="Host">
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="180" parent="16" name="User">
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="181" parent="16" name="Proxied_host">
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="182" parent="16" name="Proxied_user">
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="183" parent="16" name="With_grant">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="184" parent="16" name="Grantor">
+        <mandatory>1</mandatory>
+        <data-type>char(77)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="185" parent="16" name="Timestamp">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="186" parent="16" name="Grantor">
+        <columns>Grantor</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="187" parent="16" name="PRIMARY">
+        <columns>Host
+User
+Proxied_host
+Proxied_user</columns>
+        <primary>1</primary>
+      </key>
+      <column id="188" parent="17" name="Server_name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="189" parent="17" name="Host">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="190" parent="17" name="Db">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="191" parent="17" name="Username">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="192" parent="17" name="Password">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="193" parent="17" name="Port">
+        <mandatory>1</mandatory>
+        <data-type>int(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="194" parent="17" name="Socket">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="195" parent="17" name="Wrapper">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="196" parent="17" name="Owner">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="197" parent="17" name="PRIMARY">
+        <columns>Server_name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="198" parent="18" name="start_time">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="199" parent="18" name="user_host">
+        <mandatory>1</mandatory>
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="200" parent="18" name="query_time">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="201" parent="18" name="lock_time">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="202" parent="18" name="rows_sent">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="203" parent="18" name="rows_examined">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="204" parent="18" name="db">
+        <mandatory>1</mandatory>
+        <data-type>varchar(512)</data-type>
+      </column>
+      <column id="205" parent="18" name="last_insert_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="206" parent="18" name="insert_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="207" parent="18" name="server_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="208" parent="18" name="sql_text">
+        <mandatory>1</mandatory>
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="209" parent="19" name="Host">
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="210" parent="19" name="Db">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="211" parent="19" name="User">
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="212" parent="19" name="Table_name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="213" parent="19" name="Grantor">
+        <mandatory>1</mandatory>
+        <data-type>char(77)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="214" parent="19" name="Timestamp">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="215" parent="19" name="Table_priv">
+        <mandatory>1</mandatory>
+        <data-type>set(&apos;Select&apos;, &apos;Insert&apos;, &apos;Update&apos;, &apos;Delete&apos;, &apos;Create&apos;, &apos;Drop&apos;, &apos;Grant&apos;, &apos;References&apos;, &apos;Index&apos;, &apos;Alter&apos;, &apos;Create View&apos;, &apos;Show view&apos;, &apos;Trigger&apos;)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="216" parent="19" name="Column_priv">
+        <mandatory>1</mandatory>
+        <data-type>set(&apos;Select&apos;, &apos;Insert&apos;, &apos;Update&apos;, &apos;References&apos;)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <index id="217" parent="19" name="Grantor">
+        <columns>Grantor</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="218" parent="19" name="PRIMARY">
+        <columns>Host
+Db
+User
+Table_name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="219" parent="20" name="Time_zone_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="220" parent="20" name="Use_leap_seconds">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;Y&apos;, &apos;N&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <key id="221" parent="20" name="PRIMARY">
+        <columns>Time_zone_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="222" parent="21" name="Transition_time">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="223" parent="21" name="Correction">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="224" parent="21" name="PRIMARY">
+        <columns>Transition_time</columns>
+        <primary>1</primary>
+      </key>
+      <column id="225" parent="22" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>char(64)</data-type>
+      </column>
+      <column id="226" parent="22" name="Time_zone_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <key id="227" parent="22" name="PRIMARY">
+        <columns>Name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="228" parent="23" name="Time_zone_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="229" parent="23" name="Transition_time">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="230" parent="23" name="Transition_type_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <key id="231" parent="23" name="PRIMARY">
+        <columns>Time_zone_id
+Transition_time</columns>
+        <primary>1</primary>
+      </key>
+      <column id="232" parent="24" name="Time_zone_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="233" parent="24" name="Transition_type_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="234" parent="24" name="Offset">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="235" parent="24" name="Is_DST">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="236" parent="24" name="Abbreviation">
+        <mandatory>1</mandatory>
+        <data-type>char(8)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="237" parent="24" name="PRIMARY">
+        <columns>Time_zone_id
+Transition_type_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="238" parent="25" name="Host">
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="239" parent="25" name="User">
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="240" parent="25" name="Password">
+        <mandatory>1</mandatory>
+        <data-type>char(41)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="241" parent="25" name="Select_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="242" parent="25" name="Insert_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="243" parent="25" name="Update_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="244" parent="25" name="Delete_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="245" parent="25" name="Create_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="246" parent="25" name="Drop_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="247" parent="25" name="Reload_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="248" parent="25" name="Shutdown_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="249" parent="25" name="Process_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="250" parent="25" name="File_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="251" parent="25" name="Grant_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="252" parent="25" name="References_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="253" parent="25" name="Index_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="254" parent="25" name="Alter_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="255" parent="25" name="Show_db_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="256" parent="25" name="Super_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="257" parent="25" name="Create_tmp_table_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="258" parent="25" name="Lock_tables_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="259" parent="25" name="Execute_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="260" parent="25" name="Repl_slave_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="261" parent="25" name="Repl_client_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="262" parent="25" name="Create_view_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="263" parent="25" name="Show_view_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="264" parent="25" name="Create_routine_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="265" parent="25" name="Alter_routine_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="266" parent="25" name="Create_user_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="267" parent="25" name="Event_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="268" parent="25" name="Trigger_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="269" parent="25" name="Create_tablespace_priv">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;N&apos;, &apos;Y&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="270" parent="25" name="ssl_type">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;&apos;, &apos;ANY&apos;, &apos;X509&apos;, &apos;SPECIFIED&apos;)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="271" parent="25" name="ssl_cipher">
+        <mandatory>1</mandatory>
+        <data-type>blob</data-type>
+      </column>
+      <column id="272" parent="25" name="x509_issuer">
+        <mandatory>1</mandatory>
+        <data-type>blob</data-type>
+      </column>
+      <column id="273" parent="25" name="x509_subject">
+        <mandatory>1</mandatory>
+        <data-type>blob</data-type>
+      </column>
+      <column id="274" parent="25" name="max_questions">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="275" parent="25" name="max_updates">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="276" parent="25" name="max_connections">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="277" parent="25" name="max_user_connections">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="278" parent="25" name="plugin">
+        <data-type>char(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="279" parent="25" name="authentication_string">
+        <data-type>text</data-type>
+      </column>
+      <key id="280" parent="25" name="PRIMARY">
+        <columns>Host
+User</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="MySQL - seckill@localhost" uuid="d8f4459f-c25f-4dbf-a21f-96426b6b9a63">
+    <database-info product="MySQL" version="5.5.40" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="seckill"/>
+      <table id="2" parent="1" name="seckill">
+        <comment>秒杀库存表</comment>
+      </table>
+      <table id="3" parent="1" name="success_killed">
+        <comment>秒杀成功明细表</comment>
+      </table>
+      <column id="4" parent="2" name="seckill_id">
+        <comment>商品库存id</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="5" parent="2" name="name">
+        <comment>商品名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="6" parent="2" name="number">
+        <comment>库存数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="7" parent="2" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="8" parent="2" name="start_time">
+        <comment>秒杀开启时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="9" parent="2" name="end_time">
+        <comment>秒杀结束时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="10" parent="2" name="idx_create_time">
+        <columns>create_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="11" parent="2" name="idx_end_time">
+        <columns>end_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="12" parent="2" name="idx_start_time">
+        <columns>start_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="13" parent="2" name="PRIMARY">
+        <columns>seckill_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="14" parent="3" name="seckill_id">
+        <comment>秒杀商品id</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="15" parent="3" name="user_phone">
+        <comment>用户手机号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="16" parent="3" name="state">
+        <comment>状态标志：-1：无效 0：成功 1：已付款 2：已发货</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;-1&apos;</default-expression>
+      </column>
+      <column id="17" parent="3" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="18" parent="3" name="idx_create_time">
+        <columns>create_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="19" parent="3" name="PRIMARY">
+        <columns>seckill_id
+user_phone</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
