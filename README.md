@@ -22,7 +22,7 @@
 [3] 实现了当用户对同一个商品进行二次秒杀时，提前秒杀或超时秒杀，系统作出对应的响应。<br/>
 [4] DTO层设计了Exposer类，当秒杀开启时，才暴露秒杀接口的地址，没开启时，只输出系统的时间和秒杀时间，一定程度上规避了浏览器插件作弊风险。
     同时SeckillExecution类，用来封装秒杀执行后的结果。<br/>
-[5] 配置了spring-service。xml文件，将service对象交由spring托管，使用了基于注解的声明式事务，实现对executeSecKill方法相关提交和回滚操作。<br/>
+[5] 配置了spring-service.xml文件，将service对象交由spring托管，使用了基于注解的声明式事务，实现对executeSecKill方法相关提交和回滚操作。<br/>
 [7] 通过了service层对应的单元测试。<br/>
 [8] 出现的问题：*已记录，最后补充*<br/>
 [9] 总结：*已记录，最后补充*
