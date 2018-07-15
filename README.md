@@ -37,9 +37,7 @@
     |   POST  | /seckill/{seckillId}/{md5}/execution | 执行秒杀  |
 <br/>
 
-- 完成了`springMVC`的整合，使用注解方式映射驱动，使用`DTO`层的`seckillResult`实体，将所有的ajax请求返回类型，全部封装成json数据，与前端交互。
-<br/>
-
+- 完成了`springMVC`的整合，使用注解方式映射驱动，使用`DTO`层的`seckillResult`实体，将所有的ajax请求返回类型，全部封装成json数据，与前端交互。<br/>
 - 前端页面使用`jQuery&&plugin`、`Bootstrap`技术完成。
 
 
