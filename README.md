@@ -27,10 +27,16 @@
 
 - 完成前端交互设计过程，`流程图`参见博客。<br/>
 - 秒杀接口的`api`使用了Restful风格。<br/>
-| 提交方式 |                url                   | 具体    |
-:-: | :-: | :-:
-|    GET  | /seckill/list                        |  秒杀列表|
-|    GET  | /seckill/{seckillId}/detail          |  秒杀页  |
-|    GET  | /seckill/time/now | 234              |  系统时间|
-|   POST  | /seckill/{seckillId}/exposer         | 暴露秒杀  |
-|   POST  | /seckill/{seckillId}/{md5}/execution | 执行秒杀  |
+
+    | 提交方式 |                url                   | 具体    |
+    :-: | :-: | :-:
+    |    GET  | /seckill/list                        |  秒杀列表|
+    |    GET  | /seckill/{seckillId}/detail          |  秒杀页  |
+    |    GET  | /seckill/time/now | 234              |  系统时间|
+    |   POST  | /seckill/{seckillId}/exposer         | 暴露秒杀  |
+    |   POST  | /seckill/{seckillId}/{md5}/execution | 执行秒杀  |
+<br/>
+- 完成了`springMVC`的整合，使用注解方式映射驱动，使用`DTO`层的`seckillResult`实体，将所有的ajax请求返回类型，全部封装成json数据，与前端交互。
+- 前端页面使用`jQuery&&plugin`、`Bootstrap`技术完成。
+
+
