@@ -18,7 +18,7 @@ public class Exposer {
     //加密方式
     private String md5;
 
-    private long  secKillId;
+    private long secKillId;
 
     //系统当前时间(毫秒)
     private long now;

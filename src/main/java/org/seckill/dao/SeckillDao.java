@@ -32,6 +32,6 @@ public interface SeckillDao {
      * @param limit  显示的条数记录
      * @return 返回查询的秒杀商品列表
      */
-    //传递多个参数是 需要@Param("")来说明具体是哪一个形参
+    //传递多个参数时 需要@Param("")来说明具体是哪一个形参
     List<Seckill> queryAll(@Param("offset") int offset, @Param("limit")int limit);
 }
