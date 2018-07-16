@@ -29,7 +29,7 @@
 - 秒杀接口的`api`使用了Restful风格。<br/>
 
     | 提交方式 |                url                   | 具体    |
-    :-: | :-: | :-:
+    |:-: | :-: | :-: |
     |    GET  | /seckill/list                        |  秒杀列表|
     |    GET  | /seckill/{seckillId}/detail          |  秒杀页  |
     |    GET  | /seckill/time/now | 234              |  系统时间|
