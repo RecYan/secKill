@@ -135,6 +135,33 @@
       <version>4.1.7.RELEASE</version>
     </dependency>
 
+    <!--**优化 redis客户端：Jedis -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.7.3</version>
+    </dependency>
+
+    <!--**优化 protostuff：自定义序列化 -->
+    <dependency>
+      <groupId>com.dyuproject.protostuff</groupId>
+      <artifactId>protostuff-core</artifactId>
+      <version>1.0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>com.dyuproject.protostuff</groupId>
+      <artifactId>protostuff-runtime</artifactId>
+      <version>1.0.8</version>
+    </dependency>
+
+    <!--**优化 引入collections依赖 -->
+    <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+      <version>3.2</version>
+    </dependency>
+
+
     <!-- **倒计时bug: 添加json依赖-->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>

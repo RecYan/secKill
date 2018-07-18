@@ -103,7 +103,12 @@ public class seckillController {
         SeckillResult<SeckillExecution> result;
 
         try {
-            SeckillExecution execution = seckillService.executeSecKill(seckillId, phone, md5);
+            //**优化；调用存储过程
+            SeckillExecution execution = seckillService.executeSecKillprocedure(seckillId, phone, md5);
+
+            /** 优化前
+             * SeckillExecution execution = seckillService.executeSecKill(seckillId, phone, md5);
+             */
             return new SeckillResult<SeckillExecution>(true, execution);
         } catch (RepeatKillException e1) {
             //处理系统允许的异常(秒杀重复)
