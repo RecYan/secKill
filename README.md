@@ -61,4 +61,10 @@
 ![](https://i.imgur.com/LrccpQx.jpg)
 **数据表**
 ![](https://i.imgur.com/Um3npPI.jpg)
-
+**Redis**
+![](https://i.imgur.com/tsmv5nn.jpg)
+**测试**
+![](https://i.imgur.com/4NxZpKX.jpg)
+![](https://i.imgur.com/TJwjJVU.jpg)
+![](https://i.imgur.com/XCwsQWX.jpg)
+![](https://i.imgur.com/ZW1BLvY.jpg)
