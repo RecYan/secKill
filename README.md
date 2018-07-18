@@ -51,19 +51,19 @@
 
 + 详细业务逻辑、优化分析，参见博客。
 + 最终项目效果图如图所示：
- **列表页**
+ **列表页**<br/>
 ![](https://i.imgur.com/pemkcqo.jpg)
-**详情页**  `采用cookie值+md5值作为登录凭证`
+**详情页**  `采用cookie值+md5值作为登录凭证`<br/>
 ![](https://i.imgur.com/htIKrwH.jpg)
 ![](https://i.imgur.com/n8QXM4P.jpg)
-**秒杀结果**
+**秒杀结果**<br/>
 ![](https://i.imgur.com/U6GDqMr.jpg)
 ![](https://i.imgur.com/LrccpQx.jpg)
-**数据表**
+**数据表**<br/>
 ![](https://i.imgur.com/Um3npPI.jpg)
-**Redis**
+**Redis**<br/>
 ![](https://i.imgur.com/tsmv5nn.jpg)
-**测试**
+**测试**<br/>
 ![](https://i.imgur.com/4NxZpKX.jpg)
 ![](https://i.imgur.com/TJwjJVU.jpg)
 ![](https://i.imgur.com/XCwsQWX.jpg)
