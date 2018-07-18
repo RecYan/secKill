@@ -60,7 +60,7 @@
 ![](https://i.imgur.com/U6GDqMr.jpg)
 ![](https://i.imgur.com/LrccpQx.jpg)
 **数据表**<br/>
-![](https://i.imgur.com/Um3npPI.jpg)
+![](https://i.imgur.com/Um3npPI.jpg)<br/>
 **Redis**<br/>
 ![](https://i.imgur.com/tsmv5nn.jpg)
 **测试**<br/>
